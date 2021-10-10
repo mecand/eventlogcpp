@@ -7,18 +7,16 @@ Event Log writing process is simplified.
 
 #### Example Usage to Write to Event Viewer
 
-
- 1. Define Event Log Source
+Define Event Log Source
     ```
        EventLogSourceInitialization("TEST INITIALIZATION");
     ```
-2. There are 3 types of Application Notification in order to write to Event Viewer.
+There are 3 types of Application Notification in order to write to Event Viewer.
 
     ``` 
      Information | Error | Warning.
-
     ```
- These types and related EventID's may vary  according to EventInfo.mc file content and resource files. 
+These types and related EventID's may vary  according to EventInfo.mc file content and resource files. 
 
     ```    
     EventLogWriter("TEST Information", EVENTLOG_INFORMATION_TYPE, EventSource);
